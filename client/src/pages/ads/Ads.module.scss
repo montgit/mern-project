@@ -1,0 +1,168 @@
+.section {
+  height: 970px;
+
+  .item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    gap: 3rem;
+    // max-width: fit-content;
+    flex-flow: row wrap;
+
+    .adContent {
+      display: grid;
+      font-weight: 600;
+      padding: 1rem;
+      row-gap: 0.5rem;
+      text-align: center;
+
+      // .post_btn {                      will fix it later
+      //     padding: 0.6rem 1.4rem;
+      //     font-size: 1.4rem;
+      //     border: none;
+      //     border-radius: 0.3rem;
+      //     background-color: black;
+      //     color: white;
+      //     cursor: pointer;
+      //     transform: scale(0.9);
+      // }
+    }
+  }
+}
+
+.modal_wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(255, 239, 213, 0.693);
+  font-size: large;
+  display: grid;
+  justify-content: center;
+}
+
+.modal_container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 30rem;
+  background-color: aquamarine;
+  padding: 3rem;
+  border-radius: 0.5rem;
+}
+
+.modal_btn {
+  padding: 0.6rem 1.4rem;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.card {
+  width: 380px;
+  position: relative;
+  box-shadow: 0 2px 7px #dfdfdf;
+  margin: 50px auto;
+  background: #fafafa;
+}
+
+.details h4 p {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  color: #363636;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.details p {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 18px;
+  color: #999;
+}
+
+.bottomDetails {
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.bottomDetails div {
+  float: left;
+  width: 50%;
+}
+
+.buttonBox button {
+  cursor: pointer;
+  margin: 15px 15px;
+  border: 1px solid #115dd8;
+  padding: 10px 20px;
+  border-radius: 200px;
+  color: #fff;
+  background: #115dd8;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  transition: 200ms;
+}
+
+.buttonBox button:hover {
+  background: #fff;
+  color: #115dd8;
+}
+
+.price {
+  font-size: 16px;
+  // color: #fbb72c;
+  color: #85bb65;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+.price small {
+  font-size: 80%;
+  font-weight: 400;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.links {
+  text-align: right;
+}
+
+.links p {
+  display: inline-block;
+  margin-left: 5px;
+  color: #b6b6b6;
+  transition: 0.3s;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.links p:hover {
+  // color: #fbb72c;
+  color: orangered;
+}
+
+.imageBox {
+  width: 100%;
+  padding: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.imageBox img {
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  border-radius: 6px;
+}
